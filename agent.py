@@ -302,7 +302,7 @@ def run_agent(brief_id: str = None, free_text: str = None) -> dict:
                 tools=tools,
                 tool_choice="auto",
                 temperature=0.2,
-                max_tokens=1024,
+                max_tokens=4096,
             )
         except Exception as e:
             final_text = f"Error during model completion: {e}"
